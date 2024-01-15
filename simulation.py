@@ -10,7 +10,7 @@ from timeit import default_timer as timer
 import multiprocessing
 from multiprocessing import Pool
 from functools import partial
-
+import numpy as np
 
 def make_grid(grid_shape_tuple):
     gridLoc = []
