@@ -5,16 +5,16 @@
 * The code require two command arguments: (1) number of Monte Carlo samples (2) number of cores to use
 * Command example for implementing BayesCGLM for 1000 simulated images : python bayescglm_mp.py 300 3 
   
-## posterir_dist.py for estimating posterior distribution 
+## posterior_dist.py for estimating posterior distribution 
 * Posterior distribution of (4) in main manuscript.
 * This code require two arguments : (1)directory where the output of BayesCGLM data is stored.  (2) number of Monte Carlo samples 
-* Command example for generating predictive distribution: python posterior_dist model_simulation 300
+* Command example for generating predictive distribution: python posterior_dist model_simulation/300 300
 
   
 ## prediction_dist.py for predictive distribtuion 
 * Predictive distribution of (5) in main manuscript.
 * This code require two arguments : (1)directory where the output of BayesCGLM data is stored.  (2) number of Monte Carlo samples 
-* Command example for generating predictive distribution: python predictive_dist model_simulation 300
+* Command example for generating predictive distribution: python predictive_dist model_simulation/300 300
 
 
 ## simulation.py for generating simulation dataset containing simulated images with four filter images for generating $\Phi$
