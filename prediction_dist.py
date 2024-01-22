@@ -33,10 +33,10 @@ if __name__ == '__main__':
     Zmat_data, Zmat_cv, X_train_basis, X_cv_basis ,X_train_cov, X_cv_cov =\
         data['train_y'], data['test_y'], data['train_x'], data['test_x'],data['train_cov'],data['test_cov']
 
-    post_path = os.path.join(exp_dir, f'posterior_predictive.ny')
+    post_path = os.path.join(exp_dir, f'posterior_predictive.npy')
     posterior_predictive = load_np(post_path)
 
-    pred_path = os.path.join(exp_dir, f'predictive_sigma.ny')
+    pred_path = os.path.join(exp_dir, f'predictive_sigma.npy')
     pred_sigma = load_np(pred_path)
 
 
