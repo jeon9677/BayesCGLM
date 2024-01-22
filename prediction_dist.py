@@ -9,10 +9,19 @@ import pandas as pd
 from sklearn.metrics import mean_squared_error , accuracy_score, recall_score, precision_score, f1_score
 
 from keras.models import Sequential, Model, Input, load_model
-from utils import load_np
 from dataset_malaria import Dataset
 from sklearn.preprocessing import StandardScaler
 
+
+def save_np(arr, path):
+    with open(path, 'wb') as f:
+        np.save(f, arr)
+
+
+def load_np(path):
+    with open(path, 'rb') as f:
+        arr = np.load(f)
+    return arr
 
 if __name__ == '__main__':
 
