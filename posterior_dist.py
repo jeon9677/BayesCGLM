@@ -8,7 +8,16 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import mean_squared_error , accuracy_score, recall_score, precision_score, f1_score
 from scipy.stats import multivariate_normal
-from utils import load_np
+
+def save_np(arr, path):
+    with open(path, 'wb') as f:
+        np.save(f, arr)
+
+
+def load_np(path):
+    with open(path, 'rb') as f:
+        arr = np.load(f)
+    return arr
 
 
 
