@@ -4,10 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 import seaborn as sns
-import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_squared_error , accuracy_score, recall_score, precision_score, f1_score
-
 from keras.models import Sequential, Model, Input, load_model
 from dataset_malaria import Dataset
 from sklearn.preprocessing import StandardScaler
