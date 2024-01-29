@@ -1,20 +1,22 @@
 # Python codes for 'A Bayesian Convolutional Neural Network-based Generalized Linear Model'
 
-### Simulation 
-## Codes for training ByasCGLM with simulation datasets: bayescglm_mp.py  (multiprocessing code for BayesCGLM)
-* The code require two command arguments: (1) number of Monte Carlo samples (2) number of cores to use
-* Command example for implementing BayesCGLM for 1000 simulated images : python bayescglm_mp.py 300 3 
-  
-## posterior_dist.py for estimating posterior distribution 
+## Simulation dataset code. 
+### bayescglm_mp.py for training ByasCGLM with simulation datasets (multiprocessing code for BayesCGLM)
+* The code require two command arguments: (1) number of Monte Carlo samples (e.g.300) (2) number of cores to use
+* Example command statement for implementing BayesCGLM for 1000 simulated images : _python bayescglm_mp.py 300 3_ 
+
+
+## Codes for generating samples from posterior distributions 
+### posterior_dist.py for estimating posterior distribution 
 * Posterior distribution of (4) in main manuscript.
 * This code require two arguments : (1)directory where the output of BayesCGLM data is stored.  (2) number of Monte Carlo samples 
-* Command example for generating predictive distribution: python posterior_dist model_simulation/300 300
+* Example command statement for generating predictive distribution: _python posterior_dist model_simulation/300 300_
 
   
 ## prediction_dist.py for predictive distribtuion 
 * Predictive distribution of (5) in main manuscript.
 * This code require two arguments : (1)directory where the output of BayesCGLM data is stored.  (2) number of Monte Carlo samples 
-* Command example for generating predictive distribution: python predictive_dist model_simulation/300 300
+* Example command statement for generating predictive distribution: _python predictive_dist model_simulation/300 300_
 
 
 ## simulation.py for generating simulation dataset containing simulated images with four filter images for generating $\Phi$
