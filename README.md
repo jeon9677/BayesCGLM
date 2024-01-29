@@ -1,12 +1,14 @@
 # Python codes for 'A Bayesian Convolutional Neural Network-based Generalized Linear Model'
 
-## Simulation dataset code. 
+## 1. Simulation dataset code. 
 ### bayescglm_mp.py for training ByasCGLM with simulation datasets (multiprocessing code for BayesCGLM)
 * The code require two command arguments: (1) number of Monte Carlo samples (e.g.300) (2) number of cores to use
-* Example command statement for implementing BayesCGLM for 1000 simulated images : _python bayescglm_mp.py 300 3_ 
+* simulation_data_generator function() requires four arguments:  (1) number of simulated images (2) true coefficient of covariates (3) grid size (4) seed number for random data generation.
+* simulation data can generate normal, poisson, and binary responses. 
+* Example command statement for implementing BayesCGLM for 1000 simulation dataset with 300 Monte Carlo samples and 3 cores for multiprocessing : _python bayescglm_mp.py 300 3_ 
 
 
-## Codes for generating samples from posterior distributions 
+## 2. Codes for generating samples from posterior distributions 
 ### posterior_dist.py for estimating posterior distribution 
 * Posterior distribution of (4) in main manuscript.
 * This code require two arguments : (1)directory where the output of BayesCGLM data is stored.  (2) number of Monte Carlo samples 
@@ -19,19 +21,16 @@
 * Example command statement for generating predictive distribution: _python predictive_dist model_simulation/300 300_
 
 
-## simulation.py for generating simulation dataset containing simulated images with four filter images for generating $\Phi$
-* get_model() for BayesCNN. 
-* job () for training BayesCGLM by combining $\Phi$ from get_model with covariates. 
-* simulation_data_generator function() requires four arguments:  (1) number of simulated images (2) true coefficient of covariates (3) grid size (4) seed number for random data generation.
-* simulation data can generate normal, poisson, and binary responses. 
-* Command example for implementing BayesCGLM with 300 Monte Carlo samples by using 5 cores for multiprocessing: python simulation.py 300 5 
+## 3. Data 
+* Because of the huge dataseiz, we stroe extracted Phi $\boldsymbol{\Phi}$ of each application in Data folder.
+* For malaria incidence (malaria_data folder), resting state fMRI (NKI_data folder), and brain tumor images (braintumor_data folder) are in seperate folder. 
 
-### Data 
-## Datasets for malaria incidence (malaria_data folder), resting state fMRI (NKI_data folder), and brain tumor images (braintumor_data folder).  
-## In each foler, there is code for processing each dataset for training BayesCGLM 
 
-### Applications 
-## 00_braintumor_bayescglm_mp.py for training BayesCGLM with braintumor dataset 
-## 00_malaria_bayescglm_mp.py for training BayesCGLM with malaria dataset 
-## 00_nki_bayescglm_mp.py for training BayesCGLM with fMRI dataset 
+## 3. Applications 
+* In each Data folers, there is code for processing each dataset for training BayesCGLM
+* 00_braintumor_bayescglm_mp.py for training BayesCGLM with braintumor dataset
+  **  Example command statement: 
+* 00_malaria_bayescglm_mp.py for training BayesCGLM with malaria dataset
+* 00_nki_bayescglm_mp.py for training BayesCGLM with fMRI dataset
+
 
