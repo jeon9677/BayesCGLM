@@ -29,7 +29,7 @@
 ## 3. Applications 
 * In each Data folers, there is code for processing each dataset for training BayesCGLM
 * 00_braintumor_bayescglm_mp.py for training BayesCGLM with braintumor dataset
-  **  Example command statement: 
+  - Example command statement: 
 * 00_malaria_bayescglm_mp.py for training BayesCGLM with malaria dataset
 * 00_nki_bayescglm_mp.py for training BayesCGLM with fMRI dataset
 
