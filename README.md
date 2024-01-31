@@ -31,12 +31,22 @@ python predictive_dist model_simulation/300 300
 * The malaria incidence data for the African Great Lakes Region can be accessed via https://api.dhsprogram.com of The Demographic and Health Surveys (DHS) Program Application Programming Interface.
 
 ## 3-1. Applications BayesCGLM code
-* 00_braintumor_bayescglm_mp.py for training BayesCGLM with braintumor dataset
-  - Example command statement: 
-* 00_malaria_bayescglm_mp.py for training BayesCGLM with malaria dataset
-* 00_nki_bayescglm_mp.py for training BayesCGLM with fMRI dataset
-
+* 00_braintumor_bayescglm_mp.py to train BayesCGLM for the braintumor dataset (binary case)  
+  - Example command statement:
+```diff
+python predictive_dist model_simulation/300 300
+```
+* 00_malaria_bayescglm_mp.py to train BayesCGLM for the malaria dataset (poisson case)
+  - Example command statement:
+```diff
+python predictive_dist model_simulation/300 300
+```
+* 00_nki_bayescglm_mp.py for to train BayesCGLM for the fMRI dataset (Gaussian case)
+  - Example command statement:
+```diff
+python predictive_dist model_simulation/300 300
+```
 
 ## Codes for Jupyternotebook 
 * I have also uploaded the Jupyter notebook codes for parallel computing of BayesCGLM in _Jupyter_ folder.
-* There are output as html, providing codes.
+* There are outputs as html, providing codes.
