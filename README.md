@@ -22,9 +22,7 @@
 
 
 ## 3. Data 
-* Because of the huge dataseiz, we stroe extracted Phi $\boldsymbol{\Phi}$ of each application in Data folder.
-* For malaria incidence (malaria_data folder), resting state fMRI (NKI_data folder), and brain tumor images (braintumor_data folder) are in seperate folder. 
-
+* The brain tumor images dataset is available for download from \url{https://www.kaggle.com/datasets/jakeshbohaju/brain-tumor/data}. The fMRI data for the anxiety dataset can be obtained from \url{https://fcon_1000.projects.nitrc.org/}, and the malaria incidence data for the African Great Lakes Region can be accessed via \url{https://api.dhsprogram.com} of The Demographic and Health Surveys (DHS) Program Application Programming Interface.
 
 ## 3. Applications 
 * In each Data folers, there is code for processing each dataset for training BayesCGLM
