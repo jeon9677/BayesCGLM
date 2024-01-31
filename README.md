@@ -22,10 +22,11 @@
 
 
 ## 3. Data 
-* The brain tumor images dataset is available for download from \url{https://www.kaggle.com/datasets/jakeshbohaju/brain-tumor/data}. The fMRI data for the anxiety dataset can be obtained from \url{https://fcon_1000.projects.nitrc.org/}, and the malaria incidence data for the African Great Lakes Region can be accessed via \url{https://api.dhsprogram.com} of The Demographic and Health Surveys (DHS) Program Application Programming Interface.
+* The brain tumor images dataset is available for download from https://www.kaggle.com/datasets/jakeshbohaju/brain-tumor/data.
+* The fMRI data for the anxiety dataset can be obtained from https://fcon_1000.projects.nitrc.org/.
+* The malaria incidence data for the African Great Lakes Region can be accessed via https://api.dhsprogram.com of The Demographic and Health Surveys (DHS) Program Application Programming Interface.
 
 ## 3. Applications 
-* In each Data folers, there is code for processing each dataset for training BayesCGLM
 * 00_braintumor_bayescglm_mp.py for training BayesCGLM with braintumor dataset
   - Example command statement: 
 * 00_malaria_bayescglm_mp.py for training BayesCGLM with malaria dataset
