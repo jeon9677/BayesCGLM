@@ -5,7 +5,7 @@
 * The code require two command arguments: (1) number of Monte Carlo samples (e.g.300) (2) number of cores to use
 * simulation_data_generator function() requires four arguments:  (1) number of simulated images (2) true coefficient of covariates (3) grid size (4) seed number for random data generation.
 * simulation data can generate normal, poisson, and binary responses. 
-* Example command statement for implementing BayesCGLM for 1000 simulation dataset with 300 Monte Carlo samples and 3 cores for multiprocessing : $\colorbox{gray}{{\color{white}{python\ bayescglm_mp.py\ 300\ 3}}}$  _python bayescglm_mp.py 300 3_ 
+* Example command statement for implementing BayesCGLM for 1000 simulation dataset with 300 Monte Carlo samples and 3 cores for multiprocessing : $\colorbox{black}{{\color{white}{python\ bayescglm_mp.py\ 300\ 3}}}$  \
 
 
 ## 2. Codes for generating samples from posterior distributions 
