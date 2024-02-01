@@ -27,8 +27,8 @@ python predictive_dist model_simulation/300 300
 ```
 ## 3. About applications datasets 
 * The brain tumor images dataset is available for download from https://www.kaggle.com/datasets/jakeshbohaju/brain-tumor/data.
-* The fMRI data for the anxiety dataset can be obtained from https://fcon_1000.projects.nitrc.org/.
-* The malaria incidence data for the African Great Lakes Region can be accessed via https://api.dhsprogram.com of The Demographic and Health Surveys (DHS) Program Application Programming Interface.
+* The fMRI data for the anxiety dataset can be found in fMRI_data folder.
+* The malaria incidence data for the African Great Lakes Region be found in malaria_data folder.
 
 ## 3-1. Applications BayesCGLM code
 * braintumor_BayesCGLM.py to train BayesCGLM for the braintumor dataset (binary case)  
