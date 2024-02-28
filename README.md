@@ -1,5 +1,15 @@
 # Python codes for 'A Bayesian Convolutional Neural Network-based Generalized Linear Model'
 
+## 0. Package version
+* numpy version: 1.19.5
+* pandas version: 1.2.1
+* scipy version: 1.6.0
+* statsmodels version: 0.12.1
+* keras version: 2.4.3
+* multiprocess version: 3.12
+* functools version: 3.8
+
+
 ## 1. Simulation dataset code. 
 ### bayescglm_mp.py for training ByasCGLM with simulation datasets (multiprocessing code for BayesCGLM)
 * The code require two command arguments: (1) number of Monte Carlo samples (e.g.300) (2) number of cores to use
