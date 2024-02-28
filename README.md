@@ -23,7 +23,11 @@
 ### posterior_dist.py for estimating posterior distribution 
 * Posterior distribution of (4) in main manuscript.
 * This code require two arguments : (1) directory where the output of BayesCGLM is stored.  (2) number of Monte Carlo samples 
-* Example command statement for generating covariate coefficient posterior distribution:
+* Example command statement for generating covariate coefficient posterior distribution: (directory: model_simulation/300, number of MC samples: 300)  
+```diff
+python posterior_dist model_simulation/300 300
+```
+* Example command statement for generating covariate coefficient posterior distribution: (directory: model_simulation/300, number of MC samples: 300)  
 ```diff
 python posterior_dist model_simulation/300 300
 ``` 
@@ -31,7 +35,7 @@ python posterior_dist model_simulation/300 300
 ### prediction_dist.py for predictive distribtuion 
 * Predictive distribution of (5) in main manuscript.
 * This code require two arguments : (1) directory where the output of BayesCGLM is stored.  (2) number of Monte Carlo samples 
-* Example command statement for generating predictive distribution:
+* Example command statement for generating predictive distribution: (directory: model_simulation/300, number of MC samples: 300)  
 ```diff
 python prediction_dist model_simulation/300 300
 ```
