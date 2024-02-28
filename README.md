@@ -31,7 +31,9 @@ python predictive_dist model_simulation/300 300
 * The malaria incidence data for the African Great Lakes Region be found in malaria_data folder.
 
 ## 3-1. Applications BayesCGLM code
-* braintumor_BayesCGLM.py to train BayesCGLM for the braintumor dataset (binary case)  
+* dataset_braintumor.py for pre-processing MRI brain tumor dataset
+* braintumor_BayesCGLM.py to train BayesCGLM for the braintumor dataset (binary case)
+  - To run braintumor_BayesCGLM.py, please also download dataset_braintumor.py for pre-processing MRI brain tumor dataset.
   - Example command statement:
 ```diff
 python braintumor_BayesCGLM.py 500 3 
