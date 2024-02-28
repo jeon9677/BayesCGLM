@@ -13,7 +13,7 @@
 ### posterior_dist.py for estimating posterior distribution 
 * Posterior distribution of (4) in main manuscript.
 * This code require two arguments : (1)directory where the output of BayesCGLM is stored.  (2) number of Monte Carlo samples 
-* Example command statement for generating predictive distribution:
+* Example command statement for generating posterior distribution:
 ```diff
 python posterior_dist model_simulation/300 300
 ``` 
