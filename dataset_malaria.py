@@ -2,8 +2,20 @@ import os
 import sys
 import numpy as np
 import pandas as pd
-from utils import save_np
 from params import Params as P
+
+
+def save_np(arr, path):
+    with open(path, 'wb') as f:
+        np.save(f, arr)
+
+
+def load_np(path):
+    with open(path, 'rb') as f:
+        arr = np.load(f)
+    return arr
+
+
 
 
 class Dataset(object):
