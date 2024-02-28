@@ -27,9 +27,9 @@
 ```diff
 python posterior_dist model_simulation/300 300
 ```
-* Example command statement for generating covariate coefficient posterior distribution: (directory: model_simulation/300, number of MC samples: 300)  
+* Example command statement for generating covariate coefficient posterior distribution: (directory: model_malaria/500, number of MC samples: 500)  
 ```diff
-python posterior_dist model_simulation/300 300
+python posterior_dist model_malaria/500 500
 ``` 
   
 ### prediction_dist.py for predictive distribtuion 
@@ -39,6 +39,11 @@ python posterior_dist model_simulation/300 300
 ```diff
 python prediction_dist model_simulation/300 300
 ```
+* Example command statement for generating predictive distribution: (directory: model_malaria/500, number of MC samples: 500)  
+```diff
+python prediction_dist model_malaria/500 500
+```
+
 ## 3. About applications datasets 
 * The brain tumor images dataset is available for download from https://www.kaggle.com/datasets/jakeshbohaju/brain-tumor/data.
 * The fMRI data for the anxiety dataset can be found in fMRI_data folder.
@@ -52,6 +57,8 @@ python prediction_dist model_simulation/300 300
 ```diff
 python braintumor_BayesCGLM.py 500 3 
 ```
+* Once run the braintumor_BayesCGLM.py, the output will be stored in model_brain.
+
 * dataset_malaria.py for pre-processing malaria dataset
 * malaria_BayesCGLM.py to train BayesCGLM for the malaria dataset (poisson case)
   - To run malaria_BayesCGLM.py, please also download dataset_malaria.py for pre-processing malaria dataset.
@@ -59,6 +66,9 @@ python braintumor_BayesCGLM.py 500 3
 ```diff
 python malaria_BayesCGLM.py 500 3 
 ```
+* Once run the malaria_BayesCGLM.py, the output will be stored in model_malaria.
+
+
 * dataset_fMRI.py for pre-processing fMRI dataset
 * fMRI_BayesCGLM.py for to train BayesCGLM for the fMRI dataset (Gaussian case)
   - To run fMRI_BayesCGLM.py, please also download dataset_fMRI.py for pre-processing fMRI dataset.
@@ -66,3 +76,6 @@ python malaria_BayesCGLM.py 500 3
 ```diff
 python fMRI_BayesCGLM.py 500 3 
 ```
+* Once run the fMRI_BayesCGLM.py, the output will be stored in model_NKI.
+
+
