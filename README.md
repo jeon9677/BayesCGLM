@@ -23,14 +23,14 @@ python posterior_dist model_simulation/300 300
 * This code require two arguments : (1)directory where the output of BayesCGLM data is stored.  (2) number of Monte Carlo samples 
 * Example command statement for generating predictive distribution:
 ```diff
-python predictive_dist model_simulation/300 300
+python prediction_dist model_simulation/300 300
 ```
 ## 3. About applications datasets 
 * The brain tumor images dataset is available for download from https://www.kaggle.com/datasets/jakeshbohaju/brain-tumor/data.
 * The fMRI data for the anxiety dataset can be found in fMRI_data folder.
 * The malaria incidence data for the African Great Lakes Region be found in malaria_data folder.
 
-## 3-1. Applications BayesCGLM code
+## 4. Applications BayesCGLM code
 * dataset_braintumor.py for pre-processing MRI brain tumor dataset
 * braintumor_BayesCGLM.py to train BayesCGLM for the braintumor dataset (binary case)
   - To run braintumor_BayesCGLM.py, please also download dataset_braintumor.py for pre-processing MRI brain tumor dataset.
