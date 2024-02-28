@@ -46,7 +46,3 @@ python malaria_BayesCGLM.py 500 3
 ```diff
 python fMRI_BayesCGLM.py 500 3 
 ```
-
-## Codes for Jupyternotebook 
-* I have also uploaded the Jupyter notebook codes for parallel computing of BayesCGLM in _Jupyter_ folder.
-* There are outputs as html, providing codes.
