@@ -38,7 +38,9 @@ python prediction_dist model_simulation/300 300
 ```diff
 python braintumor_BayesCGLM.py 500 3 
 ```
+* dataset_malaria.py for pre-processing malaria dataset
 * malaria_BayesCGLM.py to train BayesCGLM for the malaria dataset (poisson case)
+  - To run malaria_BayesCGLM.py, please also download dataset_malaria.py for pre-processing malaria dataset.
   - Example command statement:
 ```diff
 python malaria_BayesCGLM.py 500 3 
