@@ -2,21 +2,23 @@ import logging
 import tqdm
 from scipy.spatial.distance import cdist
 from scipy.linalg import cholesky
-import statsmodels.api as sm
-from tensorflow.keras.optimizers import Adam
-import sys
+from scipy.stats import *
+
 import numpy as np
+import statsmodels.api as sm
+
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D, concatenate
 from keras.models import Sequential, Model, Input, load_model
-from keras.layers import Dense, Dropout, Flatten, SpatialDropout2D, SpatialDropout1D, AlphaDropout, Conv2D, \
-    MaxPooling2D, Conv1D, MaxPooling1D
-from scipy.stats import *
+from keras.layers import Dense, Dropout, Flatten, SpatialDropout2D, SpatialDropout1D, AlphaDropout, Conv2D, MaxPooling2D, Conv1D, MaxPooling1D
+
 from timeit import default_timer as timer
 import multiprocessing
 from multiprocessing import Pool
 from contextlib import contextmanager
 from functools import partial
 from itertools import product
+
 from dataset_braintumor import Dataset
 from sklearn.metrics import mean_squared_error, accuracy_score, recall_score, precision_score, f1_score
 from sklearn.preprocessing import StandardScaler
@@ -121,9 +123,6 @@ def job(weights, X_input, X_cv, X_train_covariate, X_cv_covariate, Zmat_data, Zm
 
     acc = np.hstack([acc, rec, prc, f1])
 
-    # CNN_prediction_Y_cv = mc_model.predict([X_cv_basis, X_cv_covariate])
-    # response = np.array(CNN_prediction_Y_cv)
-
 
     return _results.params[-2:], pred, acc, fishers, inverse_fisher   # normal
 
@@ -143,10 +142,6 @@ def main():
 
     batch_size = 3
     epochs = 5  # 300
-
-    # print(Zmat_cv.shape)
-    # sys.exit(1)
-
 
     Zmat_train = Zmat_data.reshape(Zmat_data.shape[0], 1)
     Zmat_cv_y = Zmat_cv.reshape(Zmat_cv.shape[0], 1)
@@ -182,7 +177,7 @@ def main():
     n_model = int(sys.argv[1])
     X_input = [X_train_basis, X_train_covariate]
     X_cv = [X_cv_basis, X_cv_covariate]
-    #
+    
     weights = mc_model.get_weights()
     logging.debug(f"CPU count: {multiprocessing.cpu_count()}")
     n_process = int(sys.argv[2])
@@ -201,21 +196,6 @@ def main():
     logging.debug(f"Time : {t1 - t0}")
     time_temp = np.array(t1 - t0)
     time_result.append(time_temp)
-
-
-    # response = []
-    # with Pool(processes=n_process) as pool:
-    #     for response in \
-    #             pool.map(partial(job,
-    #                              weights, X_cv_covariate,X_cv_basis),
-    #                      range(n_model)):
-    #         response=response
-    # t1 = timer()  # end time
-    # logging.debug(f"Time : {t1 - t0}")
-
-
-
-    # sys.exit(1)
 
     logging.debug('glm')
     exp_name = f'{n_model}'
