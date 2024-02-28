@@ -18,7 +18,7 @@ from multiprocessing import Pool
 from contextlib import contextmanager
 from functools import partial
 from itertools import product
-from dataset_NKI_update import Dataset
+from dataset_fMRI import Dataset
 from sklearn.metrics import mean_squared_error, accuracy_score, recall_score, precision_score, f1_score
 
 
