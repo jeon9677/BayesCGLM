@@ -58,7 +58,7 @@ python prediction_dist model_malaria/500 500
 python braintumor_BayesCGLM.py 500 3 
 ```
 * Once run the braintumor_BayesCGLM.py, the output will be stored in model_brain.
-
+--------
 * dataset_malaria.py for pre-processing malaria dataset
 * malaria_BayesCGLM.py to train BayesCGLM for the malaria dataset (poisson case)
   - To run malaria_BayesCGLM.py, please also download dataset_malaria.py for pre-processing malaria dataset.
@@ -67,8 +67,7 @@ python braintumor_BayesCGLM.py 500 3
 python malaria_BayesCGLM.py 500 3 
 ```
 * Once run the malaria_BayesCGLM.py, the output will be stored in model_malaria.
-
-
+---------
 * dataset_fMRI.py for pre-processing fMRI dataset
 * fMRI_BayesCGLM.py for to train BayesCGLM for the fMRI dataset (Gaussian case)
   - To run fMRI_BayesCGLM.py, please also download dataset_fMRI.py for pre-processing fMRI dataset.
