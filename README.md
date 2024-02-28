@@ -45,7 +45,9 @@ python braintumor_BayesCGLM.py 500 3
 ```diff
 python malaria_BayesCGLM.py 500 3 
 ```
+* dataset_fMRI.py for pre-processing fMRI dataset
 * fMRI_BayesCGLM.py for to train BayesCGLM for the fMRI dataset (Gaussian case)
+  - To run fMRI_BayesCGLM.py, please also download dataset_fMRI.py for pre-processing fMRI dataset.
   - Example command statement:
 ```diff
 python fMRI_BayesCGLM.py 500 3 
