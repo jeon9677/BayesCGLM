@@ -85,4 +85,5 @@ python fMRI_BayesCGLM.py 500 3
 * (Poisson)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/Binary_BayesCGLM_Simulation.html
 * (Binary)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/Binary_BayesCGLM_Simulation.html
 * (fMRI)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/fMRI_example.html
-
+* (malaria)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/malaria_example.html
+* (brain tumor)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/braintumor_example.html
