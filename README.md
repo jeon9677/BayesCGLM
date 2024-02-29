@@ -84,5 +84,5 @@ python fMRI_BayesCGLM.py 500 3
 * (Gaussian)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/Gaussian_BayesCGLM_Simulation.html
 * (Poisson)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/Binary_BayesCGLM_Simulation.html
 * (Binary)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/Binary_BayesCGLM_Simulation.html
-
+* (fMRI)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/fMRI_example.html
 
