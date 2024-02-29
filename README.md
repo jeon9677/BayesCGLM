@@ -11,7 +11,7 @@
 
 
 ## 1. Simulation dataset code. 
-### bayescglm_mp.py for training ByasCGLM with simulation datasets (multiprocessing code for BayesCGLM)
+### Simulations/bayescglm_mp.py for training ByasCGLM with simulation datasets (multiprocessing code for BayesCGLM)
 * The code require two command arguments: (1) number of Monte Carlo samples (e.g.300) (2) number of cores to use
 * simulation_data_generator function() requires four arguments:  (1) number of simulated images (2) true coefficient of covariates (3) grid size (4) seed number for random data generation.
 * simulation data can generate normal, poisson, and binary responses. 
@@ -50,8 +50,8 @@ python prediction_dist model_malaria/500 500
 * The malaria incidence data for the African Great Lakes Region be found in malaria_data folder.
 
 ## 4. Applications BayesCGLM code
-* dataset_braintumor.py for pre-processing MRI brain tumor dataset
-* braintumor_BayesCGLM.py to train BayesCGLM for the braintumor dataset (binary case)
+* Applications/brain_tumor/dataset_braintumor.py for pre-processing MRI brain tumor dataset
+* Applications/brain_tumor/braintumor_BayesCGLM.py to train BayesCGLM for the braintumor dataset (binary case)
   - To run braintumor_BayesCGLM.py, please also download dataset_braintumor.py for pre-processing MRI brain tumor dataset.
   - Example command statement:
 ```diff
@@ -59,8 +59,8 @@ python braintumor_BayesCGLM.py 500 3
 ```
 * Once run the braintumor_BayesCGLM.py, the output will be stored in model_brain.
 --------
-* dataset_malaria.py for pre-processing malaria dataset
-* malaria_BayesCGLM.py to train BayesCGLM for the malaria dataset (poisson case)
+* Applications/malaria/dataset_malaria.py for pre-processing malaria dataset
+* Applications/malaria/malaria_BayesCGLM.py to train BayesCGLM for the malaria dataset (poisson case)
   - To run malaria_BayesCGLM.py, please also download dataset_malaria.py for pre-processing malaria dataset.
   - Example command statement:
 ```diff
@@ -68,8 +68,8 @@ python malaria_BayesCGLM.py 500 3
 ```
 * Once run the malaria_BayesCGLM.py, the output will be stored in model_malaria.
 ---------
-* dataset_fMRI.py for pre-processing fMRI dataset
-* fMRI_BayesCGLM.py for to train BayesCGLM for the fMRI dataset (Gaussian case)
+* Applications/fMRI/dataset_fMRI.py for pre-processing fMRI dataset
+* Applications/fMRI/fMRI_BayesCGLM.py for to train BayesCGLM for the fMRI dataset (Gaussian case)
   - To run fMRI_BayesCGLM.py, please also download dataset_fMRI.py for pre-processing fMRI dataset.
   - Example command statement:
 ```diff
