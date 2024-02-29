@@ -81,8 +81,8 @@ python fMRI_BayesCGLM.py 500 3
 * Once run the fMRI_BayesCGLM.py, the output will be stored in model_NKI.
 
 ## 5. Code guidance, provided as html 
-* (Gaussian)  https://jeon9677.github.io/BayesCGLM/Gaussian_BayesCGLM_Simulation.html
-* (Poisson)  https://jeon9677.github.io/BayesCGLM/Poisson_BayesCGLM_Simulation.html
-* (Binary)  https://jeon9677.github.io/BayesCGLM/Binary_BayesCGLM_Simulation.html
+* (Gaussian)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/Gaussian_BayesCGLM_Simulation.html
+* (Poisson)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/Binary_BayesCGLM_Simulation.html
+* (Binary)  https://jeon9677.github.io/BayesCGLM/Code_guidance_html/Binary_BayesCGLM_Simulation.html
 
 
