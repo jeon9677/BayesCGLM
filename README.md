@@ -53,6 +53,7 @@ python prediction_dist model_malaria/500 500
 * Applications/brain_tumor/dataset_braintumor.py for pre-processing MRI brain tumor dataset
 * Applications/brain_tumor/braintumor_BayesCGLM.py to train BayesCGLM for the braintumor dataset (binary case)
   - To run braintumor_BayesCGLM.py, please also download dataset_braintumor.py for pre-processing MRI brain tumor dataset.
+  - The code require two command arguments: (1) number of Monte Carlo samples (e.g.500) (2) number of cores to use
   - Example command statement:
 ```diff
 python braintumor_BayesCGLM.py 500 3 
@@ -62,6 +63,7 @@ python braintumor_BayesCGLM.py 500 3
 * Applications/malaria/dataset_malaria.py for pre-processing malaria dataset
 * Applications/malaria/malaria_BayesCGLM.py to train BayesCGLM for the malaria dataset (poisson case)
   - To run malaria_BayesCGLM.py, please also download dataset_malaria.py for pre-processing malaria dataset.
+  - The code require two command arguments: (1) number of Monte Carlo samples (e.g.500) (2) number of cores to use
   - Example command statement:
 ```diff
 python malaria_BayesCGLM.py 500 3 
@@ -71,6 +73,7 @@ python malaria_BayesCGLM.py 500 3
 * Applications/fMRI/dataset_fMRI.py for pre-processing fMRI dataset
 * Applications/fMRI/fMRI_BayesCGLM.py for to train BayesCGLM for the fMRI dataset (Gaussian case)
   - To run fMRI_BayesCGLM.py, please also download dataset_fMRI.py for pre-processing fMRI dataset.
+  - The code require two command arguments: (1) number of Monte Carlo samples (e.g.500) (2) number of cores to use
   - Example command statement:
 ```diff
 python fMRI_BayesCGLM.py 500 3 
